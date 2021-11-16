@@ -194,7 +194,8 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 .d-bloc .panel button:hover,
@@ -331,9 +332,21 @@ a:hover {
     text-align: inherit;
 }
 
-.nav > li a:hover,
-.nav > li a:focus {
+.nav > li a:hover{
+    background: #f57e47;
+
+}
+.nav > li a:focus{
     background: transparent;
+  
+}
+.nav > li a:active{
+    background: #f57e47;
+    color: #f57e47!important;
+}
+
+a:focus{
+    border: black 3px solid;
 }
 
 .navbar-toggle {
@@ -508,8 +521,12 @@ button {
 }
 
 .form-control {
-    border-color: rgb(10 10 10 / 80%);
+    border: black 2px solid;
     box-shadow: none;
+}
+
+.form-control:focus{
+    color: #07243b!important;
 }
 
 .scrollToTop {
@@ -756,6 +773,7 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
 }
 
 .portfolio-row {

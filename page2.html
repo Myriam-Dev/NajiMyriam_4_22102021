@@ -43,10 +43,10 @@
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="index.html">Accueil</a>
+						<a href="index.html" aria-label="page d'accueil">Accueil</a>
 					</li>
 					<li>
-						<a href="page2.html">Contact</a>
+						<a href="page2.html" aria-label="page contact">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -85,40 +85,44 @@
 						<label for="name">
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="name" class="form-control" required aria-required="true"/>
 					</div>
 
 					<div class="form-group">
 						<label for="email">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input id="email" class="form-control" type="email" required aria-required="true"/>
 					</div>
 
 					<div class="form-group">
 						<label for="input_504">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="text" required id="input_504" />
+						<input class="form-control" type="text" required  aria-required="true" id="input_504" />
 					</div>
 
 					<div class="form-group">
 						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label>
+						<textarea id="message" class="form-control" rows="4" cols="50" required aria-required="true"></textarea>
 					</div>
 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" aria-describedby="descriptionEnvoi" >
 						Envoyer
 					</button>
+					<div id="descriptionEnvoi">La validation du bouton enregistre et envoie le formulaire</div>
 				</form>
 			</div>
 			<div class="col-sm-6">
 				<address>
-					<a href="mailto:contact@lachouetteagence.com">Contactez-nous</a>
-					<br>2 place Sathonay  
+					<a href="mailto:contact@lachouetteagence.com" aria-label="adresse mail de la chouette agence">Contactez-nous</a><br>
+					<p>
+						2 place Sathonay  
 					<br>69001 Lyon
-					<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+					<br>Ouvert de 9h à 18h, du lundi au vendredi
+					</p>
 				</address>					
 			</div>
 		</div>
@@ -169,7 +173,6 @@
 </footer>
 <!-- Footer - bloc-8 END -->
 
-    
 
 </body>
 </html>
